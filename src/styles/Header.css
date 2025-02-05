@@ -31,5 +31,45 @@ nav{
     transition: all 0.1s linear;
 }
 @media screen and (max-width: 767px){
-
+    .logo{
+        width: 8rem;
+    }
+    header{
+        justify-content: space-between;
+        padding: 3rem 1.5rem;
+ }
+    nav{
+        display: none;
+        flex-direction: column;
+        gap: 1.5rem;
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+        top: 100px;
+        left: 2.5rem;
+        width: 80%;
+        background-color: #fff;
+        padding: 2rem 0;
+        box-shadow:  0 0 100vh rgba(0, 0, 0, 0.5);
+    }
+    .link{
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    .iconMenu, .iconClose{
+        display: block;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+    .iconClose, .btnStarted{
+        display: none;
+    }
+    nav.active {
+        display: flex;
+      }
+}
+@media (min-width: 767px) and (max-width: 1000px){
+    .btnStarted{
+        display: none;
+    }
 }
