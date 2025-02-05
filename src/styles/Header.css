@@ -1,0 +1,35 @@
+header{
+    font-size: 12px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;    
+    z-index: 1000;
+    align-items: center;
+    text-align: center;
+    padding: 2.5rem 0;
+}
+.logo{
+    width: 8rem;
+    height: auto;
+}
+nav{
+    display: flex;
+    gap: 2rem;
+}
+.link{
+    text-decoration: none;
+    height: auto;
+    width:fit-content;
+}
+.iconMenu, .iconClose{
+    display: none;
+}
+.link:hover{
+    color: hsl(227, 12%, 61%);
+    transition: all 0.1s linear;
+}
+@media screen and (max-width: 767px){
+
+}
