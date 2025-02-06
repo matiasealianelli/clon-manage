@@ -35,3 +35,55 @@
     display: flex;
     gap: 2rem;
 }
+@media screen and (max-width: 767px){
+    .hero{
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+    }
+    .contInfoHero{
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    .title{
+        font-size: 2.2rem;
+        line-height: 2.5rem;
+    }
+    .description{
+        width: 90%;
+    }
+    .btnHero{
+        display: flex;
+    }
+    .graph{
+      display: none;
+    }
+}
+@media (min-width: 767px) and (max-width: 1024px){
+    .hero{
+        display: flex;
+        height: 50vh;
+        flex-direction: column;
+        justify-content: center;
+        margin: 4rem 0;
+        gap: 5rem;
+    }
+    .contInfoHero{
+        width: 80%;
+        align-items: center;
+        text-align: center;
+    }
+    .title{
+        width: 90%;
+    }
+    .description{
+        width: 90%;
+    }
+    .btnHero{
+        display: flex;
+    }
+    .graph{
+        display: none;
+    }
+}
