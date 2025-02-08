@@ -1,0 +1,52 @@
+.service {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.titleService {
+  font-size: 2.2rem;
+  /* width: 30rem; */
+  width: fit-content;
+}
+.descriptionService {
+  padding: 2rem 0;
+  font-size: 1rem;
+  width: 30rem;
+  color: #9095a7;
+  line-height: 1.7rem;
+}
+.contNumberService {
+  width: 100%;
+  height: min-content;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.numberService {
+  height: min-content;
+  width: 4rem;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.5rem 0rem; 
+  border-radius: 25px;
+  background-color: #f25f3a;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.subTitleService {
+  font-size: 1rem;
+}
+.textService {
+  padding-left: 5rem;
+  margin:1rem 0;
+  font-size: 1rem;
+  width: 30rem;
+  color: #9095a7;
+  line-height: 1.7rem;
+}
+@media screen and (max-width: 767px) {
+}
+@media (min-width: 767px) and (max-width: 1000px) {
+}
