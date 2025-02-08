@@ -47,6 +47,46 @@
   line-height: 1.7rem;
 }
 @media screen and (max-width: 767px) {
+  .service {
+    flex-direction: column;
+  }
+
+  .titleService {
+    width: 100%;
+    text-align: center;
+  }
+
+  .descriptionService {
+    width: 100%;
+    text-align: center;
+  }
+
+  .contNumberService {
+    gap: 0.5rem;
+    width: 100%;
+    padding: 0;
+    margin: 1rem 0;
+    background-color: #f98f751d;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+  }
+
+  .subTitleService {
+    font-size: 1rem;
+    width: 100%;
+    padding: 0;
+  }
+
+  .textService {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
 }
+
 @media (min-width: 767px) and (max-width: 1000px) {
+  .service {
+    display: flex;
+    flex-direction: column;
+  }
 }
