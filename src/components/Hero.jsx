@@ -17,7 +17,7 @@ export default function Hero() {
             </button>
             <RedesSociales />
         </div>
-       <img className='graph' src='/assets/img/illustration-intro.svg' alt='illustration-working'/>
+       <img className='graph' src='./assets/img/illustration-intro.svg' alt='illustration-working'/>
         
         </section>
       </>
