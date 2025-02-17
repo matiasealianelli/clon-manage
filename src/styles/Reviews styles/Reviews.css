@@ -56,3 +56,14 @@
     font-weight: 600;
     color: #fafafa;
 }
+@media screen and (max-width: 767px){
+    .Reviews{
+        align-items: center;
+    }
+    }
+    @media (min-width: 767px) and (max-width: 1024px){
+        .Reviews{
+            align-items: center;
+        }
+    }
+    
