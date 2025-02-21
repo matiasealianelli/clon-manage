@@ -1,0 +1,85 @@
+.cont-loading {
+  width: 100%;
+  height: 17rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+.loading {
+  width: auto;
+  height: 17rem;
+  padding: 0 1rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3f3f3;
+}
+.load-img {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  background-color: #dedede;
+  animation-name: circle-in-center;
+  animation: 5s cubic-bezier(0.25, 1, 0.3, 1) circle-in-center both;
+  transition: all 5s;
+  animation-iteration-count: infinite;
+}
+.load-name {
+  background-color: #dedede;
+  height: 1rem;
+  width: 8rem;
+  margin: 1rem 0;
+  animation-name: circle-in-center;
+  animation: 5s cubic-bezier(0.25, 1, 0.3, 1) circle-in-center both;
+  transition: all 5s;
+  animation-iteration-count: infinite;
+}
+.load-text {
+  background-color: #dedede;
+  height: 1rem;
+  width: 18rem;
+  border-radius: 5px;
+  margin: 0.2rem 0;
+  animation-name: circle-in-center;
+  animation: 5s cubic-bezier(0.25, 1, 0.3, 1) circle-in-center both;
+  transition: all 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes circle-in-center {
+  from {
+    clip-path: circle(0%);
+  }
+  to {
+    clip-path: circle(125%);
+  }
+}
+
+[transition-style="in:circle:center"] {
+  animation: 2.5s cubic-bezier(0.25, 1, 0.3, 1) circle-in-center both;
+}
+
+@media screen and (max-width: 768px) {
+  .loading:nth-child(2) {
+    display: none;
+  }
+  .loading:nth-child(3) {
+    display: none;
+  }
+  .cont-loading {
+    gap: none;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .loading:nth-child(3) {
+    display: none;
+  }
+  .cont-loading {
+    gap: 30px;
+  }
+}
